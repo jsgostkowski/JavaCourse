@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b37efae-e87f-4d35-b4b2-1dd54ece94a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exampleone/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exampleone/Osoba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exampleone/Pracownik.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exampleone/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exampletwo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exampletwo/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.quicklists&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.exampleone.Main">
+  <component name="RunManager" selected="Application.exampletwo.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="wstep.Main" />
       <module name="Obiektowosc" />
@@ -71,8 +69,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="exampletwo.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exampletwo.Main" />
+      <module name="Obiektowosc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exampletwo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.exampletwo.Main" />
         <item itemvalue="Application.exampleone.Main" />
         <item itemvalue="Application.Main" />
       </list>
