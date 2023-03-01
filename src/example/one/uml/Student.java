@@ -1,4 +1,4 @@
-package exampleone;
+package example.one.uml;
 
 public class Student extends Osoba {
     private String grupa;

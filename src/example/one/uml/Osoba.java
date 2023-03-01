@@ -1,4 +1,4 @@
-package exampleone;
+package example.one.uml;
 
 public abstract class Osoba {
     private String imie;

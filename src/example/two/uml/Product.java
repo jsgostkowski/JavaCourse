@@ -1,4 +1,4 @@
-package exampletwo;
+package example.two.uml;
 
 public class Product {
     private String nazwa;

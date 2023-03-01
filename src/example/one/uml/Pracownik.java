@@ -1,6 +1,6 @@
-package exampleone;
+package example.one.uml;
 
-public class Pracownik extends Osoba{
+public class Pracownik extends Osoba {
     private String stanowisko;
     private double pensja;
 
