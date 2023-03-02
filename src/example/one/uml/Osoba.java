@@ -6,7 +6,7 @@ public abstract class Osoba {
     private String pesel;
 
     public abstract double getDochod();
-    public abstract String getPlec();
+    public abstract String getSex();
 
     public Osoba(String imie, String nazwisko, String pesel) {
         this.imie = imie;

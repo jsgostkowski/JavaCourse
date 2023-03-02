@@ -17,6 +17,12 @@ public class Szkola {
 
     private static int MIN_LICZBA_UCZNIOW = 100;
 
+    // asocjacja licznosci *
+    private List<Uczen> uczniowie = new ArrayList<>();
+
+    // kompozyucja do sal
+    private List<Sala> sale = new ArrayList<>();
+
     public Szkola(String nazwa, int rokPowstania, int numer) {
         this.nazwa = nazwa;
         this.rokPowstania = rokPowstania;
@@ -31,6 +37,22 @@ public class Szkola {
         this.wyroznienie = wyroznienie;
         setNumer(numer);
         ekstensja.add(this);
+    }
+
+    // tworzenie powiazania dla relacji 1-* szkola uczen
+    public void dodajUcznia(Uczen u){
+        // sprawdzimy czy uczen nei ma juz przypisanej szkoly
+        if(u.getSzkola() != null) throw new IllegalArgumentException("uczen ma juz szkole");
+
+        // dodajemy ucznia na liste uczniow szkoly
+        uczniowie.add(u);
+        // WAZNE informacja zwrotna, musimy poinformowac ucznia ze przypisujemy mu szkole
+        u.setSzkola(this);
+    }
+
+    public void usunUcznia(Uczen u){
+        uczniowie.remove(u);
+        u.setSzkola(null);
     }
 
     public int obliczWiekSzkoly() {
@@ -48,6 +70,30 @@ public class Szkola {
             }
         }
         this.numer = numer;
+    }
+
+    public int getRokPowstania() {
+        return rokPowstania;
+    }
+
+    public List<Sala> getSale() {
+        return sale;
+    }
+
+    public String getWyroznienie() {
+        return wyroznienie;
+    }
+
+    public static List<Szkola> getEkstensja() {
+        return ekstensja;
+    }
+
+    public static int getMinLiczbaUczniow() {
+        return MIN_LICZBA_UCZNIOW;
+    }
+
+    public List<Uczen> getUczniowie() {
+        return uczniowie;
     }
 
     public List<String> getProfile() {

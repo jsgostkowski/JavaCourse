@@ -10,7 +10,7 @@ public class Pracownik extends Osoba {
         this.pensja = pensja;
     }
     @Override
-    public String getPlec() {
+    public String getSex() {
         String pesel = getPesel();
         int l = Integer.parseInt(pesel.substring(9,10));
         if(l%2==0){

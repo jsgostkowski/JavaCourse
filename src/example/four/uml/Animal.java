@@ -1,2 +1,56 @@
-package example.four.uml;public class Animal {
+package example.four.uml;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Animal {
+    private String name;
+    private int age;
+    private String sex;
+    private static List<Animal> extension= new ArrayList<>();
+
+    public Animal(String name, int age, String sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        extension.add(this);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+
+    public static List<Animal> getAnimalsList() {
+        return extension;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", sex='" + sex + '\'' +
+                '}';
+    }
 }

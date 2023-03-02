@@ -9,7 +9,10 @@ public abstract class Account {
         this.balance = balance;
     }
 
-    public abstract double deposit(double amount);
+    public double deposit(double amount) {
+        setBalance(getBalance() + amount);
+        return getBalance();
+    }
 
     public abstract double withdrwal(double amount);
 
