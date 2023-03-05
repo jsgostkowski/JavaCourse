@@ -4,26 +4,16 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Patient extends Person {
+
+public class Visit {
     private LocalDate visitDate;
 
-    private Clinic clinic;
-
-    //assojacja z atrybutem
     private List<Exemption> exemptions = new ArrayList<>();
 
 
-    public Patient(String name, String surname, String adres, LocalDate visitDate) {
-        super(name, surname, adres);
+    public Visit(LocalDate visitDate) {
         this.visitDate = visitDate;
-    }
 
-    public Clinic getClinic() {
-        return clinic;
-    }
-
-    public void setClinic(Clinic clinic) {
-        this.clinic = clinic;
     }
 
     public LocalDate getVisitDate() {

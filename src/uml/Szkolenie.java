@@ -15,6 +15,7 @@ public class Szkolenie {
         nauczyciele.add(n);
         // info zwrotne
         n.getSzkolenia().add(this);
+
     }
 
     public String getNazwa() {

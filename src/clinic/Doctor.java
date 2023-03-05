@@ -4,13 +4,14 @@ import javax.print.Doc;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Doctor extends Person{
+public class Doctor extends Person {
     private String specialization;
     private Clinic clinic;
 
     //extension
     private static List<Doctor> doctor = new ArrayList<>();
 
+    private List<Training> trainings = new ArrayList<>();
 
 
     public Doctor(String name, String surname, String adres, String specialization) {
@@ -18,6 +19,7 @@ public class Doctor extends Person{
         this.specialization = specialization;
         doctor.add(this);
     }
+
     public Clinic getClinic() {
         return clinic;
     }
@@ -33,15 +35,20 @@ public class Doctor extends Person{
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
+
     public static List<Doctor> getDoctor() {
         return doctor;
     }
 
-    public static List<Doctor> getDoctorBySpecialization(List<Doctor> list, String specialization){
-        if(list == null) throw new IllegalArgumentException("List cannot be empty");
+    public List<Training> getTrainings() {
+        return trainings;
+    }
+
+    public static List<Doctor> getDoctorBySpecialization(List<Doctor> list, String specialization) {
+        if (list == null) throw new IllegalArgumentException("List cannot be empty");
         List<Doctor> result = new ArrayList<>();
         for (Doctor doctor : list) {
-            if(doctor.getSpecialization().equals(specialization)){
+            if (doctor.getSpecialization().equals(specialization)) {
                 result.add(doctor);
             }
         }
@@ -50,6 +57,6 @@ public class Doctor extends Person{
 
     @Override
     public String toString() {
-        return "Doctor: " + getName() + ", " +getSurname()+ ", " + specialization;
+        return "Doctor: " + getName() + ", " + getSurname() + ", " + specialization;
     }
 }
