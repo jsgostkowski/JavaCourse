@@ -7,13 +7,10 @@ public class Office {
     private int number;
     private final Clinic clinic;
 
-
     //ekstencja
     private static List<Office> office = new ArrayList<>();
 
-
     public Office(int number, Clinic clinic) {
-
         if (clinic == null) throw new IllegalArgumentException();
         setNumber(number);
         this.clinic = clinic;
