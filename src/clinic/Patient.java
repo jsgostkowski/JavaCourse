@@ -12,6 +12,8 @@ public class Patient extends Person {
     //assojacja z atrybutem
     private List<Exemption> exemptions = new ArrayList<>();
 
+    private List<MedicalExamination> mediacalExaminations = new ArrayList<>();
+
 
     public Patient(String name, String surname, String adres, LocalDate visitDate) {
         super(name, surname, adres);
@@ -38,5 +40,7 @@ public class Patient extends Person {
         return exemptions;
     }
 
-
+    public List<MedicalExamination> getMediacalExaminations() {
+        return mediacalExaminations;
+    }
 }

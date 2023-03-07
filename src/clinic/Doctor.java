@@ -13,6 +13,8 @@ public class Doctor extends Person {
 
     private List<Training> trainings = new ArrayList<>();
 
+    private List<MedicalExamination> medicalExaminations = new ArrayList<>();
+
 
     public Doctor(String name, String surname, String adres, String specialization) {
         super(name, surname, adres);
@@ -42,6 +44,10 @@ public class Doctor extends Person {
 
     public List<Training> getTrainings() {
         return trainings;
+    }
+
+    public List<MedicalExamination> getMedicalExaminations() {
+        return medicalExaminations;
     }
 
     public static List<Doctor> getDoctorBySpecialization(List<Doctor> list, String specialization) {

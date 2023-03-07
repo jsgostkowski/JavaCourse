@@ -44,12 +44,21 @@ public class Main {
         System.out.println("visit one: " + visitOne);
         System.out.println(patientOne.getExemptions());
         System.out.println(exemptionOne.getPatient());
+        System.out.println(exemptionOne.getVisit());
 
         Training training = new Training("TrainingOne");
         training.addDoctor(doctorThree);
         training.addDoctor(doctorOne);
         System.out.println("Doctor trainings: " + doctorThree.getTrainings());
         System.out.println("Get trainings: " + training.getDoctors());
+
+
+        System.out.println("Badania medyczne: ");
+        MedicalExamination me1 = new MedicalExamination("Kolanoskopia", patientOne,doctorThree);
+        MedicalExamination me2 = new MedicalExamination("Badanie krwi", patientOne,doctorThree);
+        System.out.println(patientOne.getMediacalExaminations());
+        System.out.println(doctorThree.getMedicalExaminations());
+
 
 
     }
