@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b37efae-e87f-4d35-b4b2-1dd54ece94a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/klienci/Klient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/klienci/Kondom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/klienci/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/klienci/Produkt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/turniej/Gracz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/turniej/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/turniej/Turniej.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/turniej/Wynik.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023__10_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023__10_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/clinic/Office.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clinic/Office.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clinic/MedicalExamination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clinic/MedicalExamination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/klienci/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/klienci/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/turniej/Gracz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/turniej/Gracz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/turniej/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/turniej/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +61,31 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.quicklists&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.uml.Main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Domownicy\IdeaProjects\JavaCourse\src\clinic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.turniej.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example.three.uml.Main" />
       <module name="Obiektowosc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="example.three.uml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clinic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="clinic.Main" />
+      <module name="Obiektowosc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="clinic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,25 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="example.one.uml.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.one.uml.Main" />
+    <configuration name="turniej.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="turniej.Main" />
       <module name="Obiektowosc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.one.uml.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="example.two.uml.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.two.uml.Main" />
-      <module name="Obiektowosc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.two.uml.*" />
+          <option name="PATTERN" value="turniej.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.turniej.Main" />
+        <item itemvalue="Application.clinic.Main" />
         <item itemvalue="Application.uml.Main" />
         <item itemvalue="Application.example.four.uml.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.example.one.uml.Main" />
-        <item itemvalue="Application.example.two.uml.Main" />
       </list>
     </recent_temporary>
   </component>

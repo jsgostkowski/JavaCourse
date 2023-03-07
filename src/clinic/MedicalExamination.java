@@ -2,7 +2,6 @@ package clinic;
 
 public class MedicalExamination {
     private final String name;
-
     private final Patient patient;
     private final Doctor doctor;
 

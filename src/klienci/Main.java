@@ -31,9 +31,9 @@ Pracownik uzywa samochod (model, marka)
 *
 
 //asocjacja z atrybutem
-1) chcemy przechowywac dla kazdego gracza jakie pozycje zajmowal w jakim turnieju
+1) chcemy przechowywac dla kazdego gracza jakie pozycje zajmowal w jakim turnieju +
 
-2) tak samo punkty jakie zdobyl z dnaego turnieju
+2) tak samo punkty jakie zdobyl z dnaego turnieju +
 
 3) znajdz gracsa ktory byl najlepeszt w turniejach o danej nazwie, jesli nie ma to rzuc wyjatkiem
 

@@ -25,6 +25,28 @@ public class Gracz {
         return suma;
     }
 
+    public static Gracz najlepszyGraczTurnieju(List<Wynik> wyniki, String nazwaTurnieju){
+        if(wyniki == null){
+            throw new IllegalArgumentException("lista wynikow jest nullem");
+        }
+
+        Gracz najlepszyGracz = wyniki.get(0).getGracz();
+        int najlepszyWynik = wyniki.get(0).getPunkty();
+        for (Wynik wynik : wyniki) {
+            if(wynik.getTurniej().getNazwa().equals(nazwaTurnieju)){
+                Gracz gracz = wynik.getGracz();
+                int liczbaPunktow = gracz.obliczLiczbePunktowWTurnieju(nazwaTurnieju);
+
+                if(liczbaPunktow > najlepszyWynik){
+                    najlepszyGracz = gracz;
+                }
+
+            }
+        }
+
+        return najlepszyGracz;
+    }
+
     public String getImie() {
         return imie;
     }
