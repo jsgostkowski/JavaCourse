@@ -116,7 +116,9 @@ public class Gracz {
     public static int obliczPunktyGraczaKtoryNieZajalPierwszegoMiejsca(Gracz gracz, List<Wynik> wyniki){
         int punktyDanegoGracza = 0;
         for (Wynik wynik : wyniki) {
-            if(wynik.getGracz().equals(gracz) && )
+            if(wynik.getGracz().equals(gracz) && wynik.getPozycja() != 1){
+                punktyDanegoGracza += wynik.getPunkty();
+            }
         }
         return punktyDanegoGracza;
     }

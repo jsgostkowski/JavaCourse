@@ -15,15 +15,15 @@ public class Main {
         Turniej t3 = new Turniej("turniej 1", LocalDate.of(2023,11,22));
         Turniej t4 = new Turniej("turniej 1", LocalDate.of(2023,11,22));
         Wynik wynik = new Wynik(1, g2, t1, 6999);
-        Wynik wynik2 = new Wynik(1, g2, t1, 2);
+        Wynik wynik2 = new Wynik(2, g2, t1, 2);
         Wynik wynik3 = new Wynik(2, g2, t1, 1000);
         Wynik wynik4 = new Wynik(4, g4, t2, 199);
-        Wynik wynik5 = new Wynik(1, g4, t3, 199);
+        Wynik wynik5 = new Wynik(13, g2, t3, 199);
         Wynik wynik6 = new Wynik(1, g4, t4, 199);
 
         System.out.println("Lista graczy bez pierwszego miejsca: " + Gracz.listaGraczyKtorzyNieZajeliPierwszeMiejsca(List.of(wynik,wynik2,wynik3,wynik4,wynik5,wynik6)));
 
-
+        System.out.println("Punkty gracza: " + Gracz.obliczPunktyGraczaKtoryNieZajalPierwszegoMiejsca(g2, List.of(wynik,wynik2,wynik3,wynik4,wynik5,wynik6)));
 
         System.out.println(Gracz.najlepszyGraczTurnieju(List.of(wynik,wynik2,wynik3, wynik4),"turniej 1"));
         System.out.println("lista graczy z pierwszym miejscem: "+Gracz.listaGraczyKtorzyZajeliPierwszeMiejsca(List.of(wynik,wynik2,wynik3,wynik4,wynik5,wynik6)));
