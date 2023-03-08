@@ -32,6 +32,7 @@ public class Gracz {
 
         Gracz najlepszyGracz = wyniki.get(0).getGracz();
         int najlepszyWynik = wyniki.get(0).getPunkty();
+
         for (Wynik wynik : wyniki) {
             if(wynik.getTurniej().getNazwa().equals(nazwaTurnieju)){
                 Gracz gracz = wynik.getGracz();
@@ -41,6 +42,55 @@ public class Gracz {
                     najlepszyGracz = gracz;
                 }
 
+            }
+        }
+
+        return najlepszyGracz;
+    }
+    //4) znajdz gracza ktory zodbyl najwiecej 1 miejsc ze wszystkich turniejow
+            //Metoda generujaca liste graczy ktorzy zdobyli pierwsze miejsca
+    public static List<Gracz> listaGraczyKtorzyZajeliPierwszeMiejsca (List<Wynik> wyniki){
+        if(wyniki == null){
+            throw new IllegalArgumentException("lista wynikow jest nullem");
+        }
+        List<Gracz> graczeZPierwszymMiejscem = new ArrayList<>();
+        int counter =0;
+        for (Wynik wynik : wyniki) {
+            if(wynik.getPozycja() == 1){
+                graczeZPierwszymMiejscem.add(wynik.getGracz());
+                counter++;
+            }
+        }
+        System.out.println(counter);
+        return graczeZPierwszymMiejscem ;
+    }
+    //Sprawdzenie ile pierwszych miejscZajalGracz
+    public static int iloscPierwszchMiejscDanegoGraczaj(Gracz gracz, List<Wynik> wyniki){
+        int ileRazyZdobylPierwszeMiejsce = 0;
+        for (Wynik wynik : wyniki) {
+            if(wynik.getGracz().equals(gracz) && wynik.getPozycja()==1){
+                ileRazyZdobylPierwszeMiejsce++;
+            }
+        }
+        return ileRazyZdobylPierwszeMiejsce;
+    }
+    //zwrocenie gracza, ktory ma najwiecej pierwszysch miejsc
+    public static Gracz graczZNajwiekszaIlosciaPierwszychMiejsc(List<Wynik> wyniki){
+        List<Gracz> graczeZPierwszymMiejscem = listaGraczyKtorzyZajeliPierwszeMiejsca(wyniki);
+        if(graczeZPierwszymMiejscem.isEmpty()){
+            throw new IllegalArgumentException("Nie ma gracza ktory zajal pierwsze miesjce");
+        }
+        Gracz najlepszyGracz = graczeZPierwszymMiejscem.get(0);
+
+        for (Gracz gracz : graczeZPierwszymMiejscem) {
+            int ilosc = 0;
+            for (Wynik wynik : wyniki) {
+                if(wynik.getGracz().equals(gracz) && wynik.getPozycja() == 1){
+                    ilosc++;
+                }
+            }
+            if(ilosc>iloscPierwszchMiejscDanegoGraczaj(najlepszyGracz,wyniki)){
+                najlepszyGracz = gracz;
             }
         }
 
