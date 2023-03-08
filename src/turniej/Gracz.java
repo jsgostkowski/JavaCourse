@@ -122,6 +122,21 @@ public class Gracz {
         }
         return punktyDanegoGracza;
     }
+    public static Gracz najlepszyGraczBezPierwszegoMiejsca(List<Wynik> wyniki){
+        Gracz najlepszyGracz = wyniki.get(0).getGracz();
+        List<Gracz> graczeBezPierwszegoMiejsca = listaGraczyKtorzyNieZajeliPierwszeMiejsca(wyniki);
+
+        int maxPunkty = Integer.MIN_VALUE;
+
+        for (Gracz gracz : graczeBezPierwszegoMiejsca) {
+            int punktyGracza = obliczPunktyGraczaKtoryNieZajalPierwszegoMiejsca(najlepszyGracz,wyniki);
+            if(maxPunkty > punktyGracza){
+                najlepszyGracz = gracz;
+            }
+        }
+        return najlepszyGracz;
+
+    }
 
     public String getImie() {
         return imie;
