@@ -96,6 +96,30 @@ public class Gracz {
 
         return najlepszyGracz;
     }
+   // 5) znajdz gracza ktory ma najwyzsyz ranking z turrniejow ale nigdycnie mial 1 miejsca
+   public static List<Gracz> listaGraczyKtorzyNieZajeliPierwszeMiejsca (List<Wynik> wyniki){
+       if(wyniki == null){
+           throw new IllegalArgumentException("lista wynikow jest nullem");
+       }
+       List<Gracz> graczeBezPierwszegoMiejsca = new ArrayList<>();
+       int counter =0;
+       for (Wynik wynik : wyniki) {
+           if(wynik.getPozycja() != 1){
+               graczeBezPierwszegoMiejsca.add(wynik.getGracz());
+               counter++;
+           }
+       }
+       System.out.println(counter);
+       return graczeBezPierwszegoMiejsca;
+   }
+   //metoda ktora policzy punkty dla gracza, który nie zajął pierwszego miesjca
+    public static int obliczPunktyGraczaKtoryNieZajalPierwszegoMiejsca(Gracz gracz, List<Wynik> wyniki){
+        int punktyDanegoGracza = 0;
+        for (Wynik wynik : wyniki) {
+            if(wynik.getGracz().equals(gracz) && )
+        }
+        return punktyDanegoGracza;
+    }
 
     public String getImie() {
         return imie;
