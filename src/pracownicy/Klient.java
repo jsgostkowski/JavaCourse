@@ -8,15 +8,16 @@ public class Klient extends Czlowiek {
 
     private List<Produkt> produkty = new ArrayList<>();
 
+
     public Klient(String imie, String nazwisko, String ulubionyProdukt) {
         super(imie, nazwisko);
         this.ulubionyProdukt = ulubionyProdukt;
     }
 
     public void dodajProdukt(Produkt produkt) {
-        if (produkt.getKlient() != null) {
-            throw new IllegalArgumentException("produkt juz zostal kupiony");
-        }
+//        if (produkt.getKlient() != null) {
+//            throw new IllegalArgumentException("produkt juz zostal kupiony");
+//        }
         produkty.add(produkt);
         produkt.setKlient(this);
     }
@@ -42,8 +43,44 @@ public class Klient extends Czlowiek {
         return klient;
     }
 
+    public int ileRazyKlientKupilProdukt(Produkt produkt) {
+        int licznik = 0;
+        for (Produkt p : produkty) {
+            if (p.getNazwa().equals(produkt.getNazwa())) {
+                licznik++;
+            }
+        }
+        return licznik;
+    }
+
+    public String ulubionyProdukt() {
+        if (produkty.isEmpty()) {
+            return "";
+        }
+        String ulubionyProdukt = produkty.get(0).getNazwa();
+        int maxLiczba = 0;
+        for (Produkt produkt : produkty) {
+            int liczba = 0;
+            for (Produkt produkt1 : produkty) {
+                if(produkt1.getNazwa().equals(produkt.getNazwa())){
+                    liczba++;
+                }
+            }
+            if(liczba>maxLiczba){
+                maxLiczba=liczba;
+                ulubionyProdukt=produkt.getNazwa();
+            }
+        }
+        return ulubionyProdukt;
+    }
+
+
     public String getUlubionyProdukt() {
         return ulubionyProdukt;
+    }
+
+    public List<Produkt> getProdukty() {
+        return produkty;
     }
 
     public void setUlubionyProdukt(String ulubionyProdukt) {
@@ -52,7 +89,7 @@ public class Klient extends Czlowiek {
 
     @Override
     public String toString() {
-        return "Imie klienta: " + getImie() +" "+
-                "Nazwisko klienta: "+" "+ getNazwisko() +" "+ getUlubionyProdukt();
+        return "Imie klienta: " + getImie() + " " +
+                "Nazwisko klienta: " + " " + getNazwisko() + " " + getUlubionyProdukt();
     }
 }
