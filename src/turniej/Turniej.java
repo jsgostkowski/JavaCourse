@@ -14,7 +14,6 @@ public class Turniej {
     public Turniej(String nazwa, LocalDate miesiac) {
         this.nazwa = nazwa;
         this.miesiac = miesiac;
-
     }
 
     public String getNazwa() {

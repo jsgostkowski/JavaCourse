@@ -1,9 +1,16 @@
 package pracownicy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Produkt {
     private String nazwa;
     private double cena;
     private Klient klient;
+
+    private List<ListaZakupow> listaZakupow = new ArrayList<>();
+
+
 
     public Produkt(String nazwa, double cena) {
         this.nazwa = nazwa;
@@ -32,6 +39,9 @@ public class Produkt {
 
     public void setCena(double cena) {
         this.cena = cena;
+    }
+    public List<ListaZakupow> getListaZakupow() {
+        return listaZakupow;
     }
 
     @Override

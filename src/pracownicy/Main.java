@@ -10,7 +10,7 @@ import java.util.List;
 //
 //1) Znajdz klienta który wydal najwiecej
 //
-//2) Wyswietl dla kazdego klienta jego ulubiony produkt (of cuz ulubiony produkt to ma byc atrybut wyliczalny na podstawie listy zakupow)
+//2) Wyswietl dla kazdego klienta jego ulubiony produkt (of cuz ulubiony produkt to ma byc atrybut wyliczalny na podstawie listy zakupow - czy tutaj klasa pomiedzy klientem-produktem ListaZakupow)
 //
 //3) Wyswietl 3 top pracownikow z najwieksza pensja (compartor + sortowanie) DODATKOWE
 //
@@ -30,13 +30,13 @@ public class Main {
         klienci.add(k3);
 
         k1.dodajProdukt(p1);
-        k1.dodajProdukt(p1);
+       // k1.dodajProdukt(p1);
         //k1.dodajProdukt(p1); wywala exceptiona bo produkt juz zostal kupiony
         k2.dodajProdukt(p2);
         k3.dodajProdukt(p3);
-        k2.dodajProdukt(p3);
-        k2.dodajProdukt(p3);
-        k2.dodajProdukt(p3);
+        //k2.dodajProdukt(p3);
+        //k2.dodajProdukt(p3);
+       // k2.dodajProdukt(p3);
         for (Klient klient : klienci) {
             System.out.println("ulubiony produkt klienta: " +klient.getImie() +" " +klient.ulubionyProdukt());
         }
@@ -44,5 +44,28 @@ public class Main {
         System.out.println(Klient.klientKtoryWydalNajwiecej(List.of(k1,k2,k3)));
         System.out.println();
       //  System.out.println(Klient.ulubionyProdukt(List.of(k1,k2,k3)));
+
+
+        Pracownik pracownik1 = new Pracownik("pracownik 1" ,"pracownik 1", 1);
+        Pracownik pracownik2 = new Pracownik("pracownik 2" ,"pracownik 2", 8);
+        Pracownik pracownik3 = new Pracownik("pracownik 3" ,"pracownik 3", 3);
+        Pracownik pracownik4 = new Pracownik("pracownik 4" ,"pracownik 4", 4);
+        Pracownik pracownik5 = new Pracownik("pracownik 5" ,"pracownik 5", 5);
+        Pracownik pracownik6 = new Pracownik("pracownik 6" ,"pracownik 6", 6);
+
+        List<Pracownik> pracownicy =new ArrayList<>();
+        pracownicy.add(pracownik1);
+        pracownicy.add(pracownik2);
+        pracownicy.add(pracownik3);
+        pracownicy.add(pracownik4);
+        pracownicy.add(pracownik5);
+        pracownicy.add(pracownik6);
+
+       // List<Pracownik> najlepiejZarabiajacyPracownicy =
+        System.out.println(pracownicy);
+
+        System.out.println(Pracownik.topTrzechNajlepiejZarabiajacychPracownikow(pracownicy));
+
+
     }
 }

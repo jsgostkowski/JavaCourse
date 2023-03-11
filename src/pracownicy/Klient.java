@@ -8,6 +8,9 @@ public class Klient extends Czlowiek {
 
     private List<Produkt> produkty = new ArrayList<>();
 
+    private List<ListaZakupow> listaZakupow = new ArrayList<>();
+
+
 
     public Klient(String imie, String nazwisko, String ulubionyProdukt) {
         super(imie, nazwisko);
@@ -15,9 +18,9 @@ public class Klient extends Czlowiek {
     }
 
     public void dodajProdukt(Produkt produkt) {
-//        if (produkt.getKlient() != null) {
-//            throw new IllegalArgumentException("produkt juz zostal kupiony");
-//        }
+        if (produkt.getKlient() != null) {
+            throw new IllegalArgumentException("produkt juz zostal kupiony");
+        }
         produkty.add(produkt);
         produkt.setKlient(this);
     }
@@ -72,6 +75,10 @@ public class Klient extends Czlowiek {
             }
         }
         return ulubionyProdukt;
+    }
+
+    public List<ListaZakupow> getListaZakupow() {
+        return listaZakupow;
     }
 
 
