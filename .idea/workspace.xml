@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b37efae-e87f-4d35-b4b2-1dd54ece94a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pracownicy/ListaZakupow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023__20_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2023__20_14__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pracownicy/WynajemSamochodu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pracownicy/Klient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Klient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pracownicy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pracownicy/Pracownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Pracownik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pracownicy/Produkt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Produkt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/turniej/Turniej.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/turniej/Turniej.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pracownicy/Samochod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Samochod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

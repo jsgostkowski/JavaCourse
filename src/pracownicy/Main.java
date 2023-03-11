@@ -65,6 +65,21 @@ public class Main {
         System.out.println(pracownicy);
 
         System.out.println(Pracownik.topTrzechNajlepiejZarabiajacychPracownikow(pracownicy));
+        Samochod samochod1 = new Samochod("ford", "escort");
+        Samochod samochod2 = new Samochod("ford", "fiesta");
+        Samochod samochod3 = new Samochod("ford", "focus");
+
+        WynajemSamochodu wynajem = new WynajemSamochodu(pracownik1,samochod1);
+        WynajemSamochodu wynajem2 = new WynajemSamochodu(pracownik1, samochod1);
+
+        pracownik1.wpozyczSamochod(samochod1);
+        pracownik1.wpozyczSamochod(samochod2);
+
+        System.out.println("WYNAJEM SAMOCHODOW: ");
+        System.out.println(wynajem);
+        System.out.println(pracownik1.getWynajem());
+        System.out.println(samochod1.getWynajem());
+        System.out.println("samochod 2: " + samochod2.getWynajem());
 
 
     }

@@ -5,6 +5,8 @@ import java.util.*;
 public class Pracownik extends Czlowiek implements Comparable<Pracownik>{
     private double pensja;
 
+    private List<WynajemSamochodu> wynajem = new ArrayList<>();
+
     public Pracownik(String imie, String nazwisko, double pensja) {
         super(imie, nazwisko);
         this.pensja = pensja;
@@ -18,6 +20,20 @@ public class Pracownik extends Czlowiek implements Comparable<Pracownik>{
         Collections.sort(pracownik, sortowaniePoPensji.reversed());
 
         return pracownik.subList(0, Math.min(3,pracownik.size()));
+    }
+
+    public void wpozyczSamochod(Samochod samochod){
+        for (WynajemSamochodu wynajemSamochodu : wynajem) {
+            if(wynajemSamochodu.getSamochod().equals(samochod)){
+                wynajemSamochodu.dodajWynajem();
+                return;
+            }
+        }
+        wynajem.add(new WynajemSamochodu(this,samochod));
+    }
+
+    public List<WynajemSamochodu> getWynajem() {
+        return wynajem;
     }
 
     public double getPensja() {
