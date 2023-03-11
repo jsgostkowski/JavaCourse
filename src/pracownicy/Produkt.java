@@ -10,8 +10,6 @@ public class Produkt {
 
     private List<ListaZakupow> listaZakupow = new ArrayList<>();
 
-
-
     public Produkt(String nazwa, double cena) {
         this.nazwa = nazwa;
         this.cena = cena;

@@ -22,6 +22,8 @@ public class Doctor extends Person {
         doctor.add(this);
     }
 
+
+
     public Clinic getClinic() {
         return clinic;
     }

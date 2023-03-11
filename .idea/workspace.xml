@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b37efae-e87f-4d35-b4b2-1dd54ece94a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pracownicy/WynajemSamochodu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/comparable/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/comparable/Samochod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/clinic/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clinic/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pracownicy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pracownicy/Pracownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Pracownik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pracownicy/Samochod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Samochod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pracownicy/Produkt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/Produkt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pracownicy/WynajemSamochodu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pracownicy/WynajemSamochodu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="c9717182-33b3-40d8-8c0f-028ed5a34400" />
+        <option name="accountId" value="251760d8-e941-4a45-be08-025435700885" />
         <option name="url" value="https://github.com/jsgostkowski/JavaCourse.git" />
       </UrlAndAccount>
     </option>
@@ -65,13 +67,13 @@
       <recent name="C:\Users\Domownicy\IdeaProjects\JavaCourse\src\clinic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.pracownicy.Main">
-    <configuration name="clinic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="clinic.Main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="comparable.Main" />
       <module name="Obiektowosc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="clinic.*" />
+          <option name="PATTERN" value="comparable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="example.four.uml.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="example.four.uml.Main" />
+    <configuration name="clinic.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="clinic.Main" />
       <module name="Obiektowosc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="example.four.uml.*" />
+          <option name="PATTERN" value="clinic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.pracownicy.Main" />
         <item itemvalue="Application.turniej.Main" />
         <item itemvalue="Application.clinic.Main" />
         <item itemvalue="Application.uml.Main" />
-        <item itemvalue="Application.example.four.uml.Main" />
       </list>
     </recent_temporary>
   </component>

@@ -70,16 +70,26 @@ public class Main {
         Samochod samochod3 = new Samochod("ford", "focus");
 
         WynajemSamochodu wynajem = new WynajemSamochodu(pracownik1,samochod1);
-        WynajemSamochodu wynajem2 = new WynajemSamochodu(pracownik1, samochod1);
+        //WynajemSamochodu wynajem2 = new WynajemSamochodu(pracownik1, samochod1);
 
         pracownik1.wpozyczSamochod(samochod1);
         pracownik1.wpozyczSamochod(samochod2);
+        pracownik4.wpozyczSamochod(samochod3);
+        pracownik4.wpozyczSamochod(samochod3);
+        pracownik4.wpozyczSamochod(samochod3);
+        pracownik4.wpozyczSamochod(samochod3);
+        pracownik3.wpozyczSamochod(samochod2);
 
         System.out.println("WYNAJEM SAMOCHODOW: ");
-        System.out.println(wynajem);
+       // System.out.println(wynajem);
         System.out.println(pracownik1.getWynajem());
         System.out.println(samochod1.getWynajem());
+        //System.out.println("samochod 2: " + samochod2.getWynajem());
+        System.out.println("Samochod 3 pracownik : " + pracownik4.getWynajem());
+        System.out.println("Samochod 3 wynajem: " + samochod3.getWynajem());
         System.out.println("samochod 2: " + samochod2.getWynajem());
+        System.out.println(pracownik3.getWynajem());
+
 
 
     }

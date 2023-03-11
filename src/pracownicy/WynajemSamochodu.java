@@ -37,8 +37,7 @@ public class WynajemSamochodu {
     public String toString() {
         return "WynajemSamochodu{" +
                 "ileRazy=" + ileRazy +
-                ", pracownik=" + pracownik +
-                ", samochod=" + samochod +
-                '}';
+                ", pracownik=" + pracownik.getImie();
+
     }
 }
